@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<body>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js" alt = "" height = "700" ,width = "700"></script>
+		{{ plotly_plot_obj|safe }}
+
+
+		<form method="POST" action="">
+			{% csrf_token  %}
+			<label for="stAir">Starting Airport:</label>
+			<input type="text" id="stAir" name="stAir" maxlength="3">
+			<label for"endAir">Destination Airport:</label>
+			<input type="text" id="endAir" name="endAir" maxlength="3">
+			<input type="submit" value="Submit">
+		</form>
+
+	</body>
+</html>
