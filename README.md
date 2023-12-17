@@ -52,7 +52,8 @@ y.collect();
 ```
 
 Screenshots:
-![](Pictures/part1screenshot.png)
+
+<img src="Pictures/part1screenshot.png" height="200"/>
 
 ### Part 2
 #### Requirements
@@ -138,11 +139,14 @@ avg_flight_prices = data_filtered.groupBy("startingAirport") \
 # result
 avg_flight_prices.show()
 ```
-![](Pictures/graph1.png)
+<img src="Pictures/graph1.png" height="200"/>
+
 Graph 1: # of Workers vs. Execution Time in seconds with a fixed dataset size. 
 
 Analysis: As the number of workers increases, the execution time increases.
-![](Pictures/graph2.png)
+
+<img src="Pictures/graph2.png" height="200"/>
+
 Graph 2: File Size in mb or gb vs. Execution Time in seconds.
 
 Analysis: As the file size increases, the execution time for the given query also increases.
@@ -160,7 +164,8 @@ format_number(avg("baseFare"),2).alias("avg_baseFare"))
 # show the result
 max_expensive_destinations.show()
  ```
-![](Pictures/query1screenshot.png)
+<img src="Pictures/query1screenshot.png" height="200"/>
+
 Query #2: This query first filters out flights that only have one leg, or no layovers. Then the most expensive flight, with the starting and destination airport is found.
 ```
 # filter out one leg flights only
@@ -180,13 +185,13 @@ most_expensive_per_airline.maxBaseFare) &(filtered_data.segmentsAirlineName
 # show the result
 expensive_flights_info.show()
  ```
-![](Pictures/query2screenshot.png)
+<img src="Pictures/query1screenshot.png" height="250"/>
 
 #### MYSQL Database Implementation:
-![](Pictures/mysql.png)
+<img src="Pictures/mysql.png" height="500"/>
 
 #### Framework for storing PySpark queries:
-![](Pictures/framework.png)
+<img src="Pictures/framework.png" height="300"/>
 
 ### Part 3
 #### Requirements
@@ -329,6 +334,10 @@ python3 manage.py runserver 0.0.0.0:8080
 
 Open the website in this link: http://cs179g-fall-2023-04.cs.ucr.edu:8080/mission/
 How the map appears on the website, there are two input boxes at the bottom:
-![](Pictures/map1.png)
+
+<img src="Pictures/map1.png" height="250"/>
+
 How the map presents information after selecting starting and destination airport:
-![](Pictures/map2.png)
+
+<img src="Pictures/map2.png" height="250"/>
+
