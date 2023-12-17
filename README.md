@@ -1,6 +1,7 @@
 
 # Group 4 Final Report
 # Trisha Agrawal, Isiah Montalvo, Dacia Rios
+##### NOTE: A subset of the dataset was uploaded to this page because the original dataset was too large.
 ### Part 1
 #### 1a. Project description. What is the goal of your analysis, and what do you expect to find? Any hypotheses?
 Goal: Generate a map of the US that allows the user to discover flight routes, flight prices, and average duration of flights.
